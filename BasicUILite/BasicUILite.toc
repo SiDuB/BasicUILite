@@ -1,0 +1,12 @@
+## Interface: 80000
+## Title:|cff00B4FFBasic|rUI Lite
+## Version: 8.0.1
+## Notes: SiDuB's Unit Interface Addon [Lite Version].
+## Author: SiDuB
+## SavedVariables: BasicUILite_DB
+## SavedVariablesPerCharacter: BasicUILite_DB_Per_Character
+## OptionalDeps: Blizzard_TradeSkillUI
+
+BasicUILite.xml
+
+

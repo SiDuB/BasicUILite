@@ -1,0 +1,25 @@
+<Ui xmlns="http:\\www.blizzard.com\wow\ui\" xmlns:xsi="http:\\www.w3.org\2001\XMLSchema-instance" xsi:schemaLocation="http:\\www.blizzard.com\wow\ui\ ..\FrameXML\UI.xsd">
+
+	<!-- Load the Config File -->
+	<Script file="Modules/BasicUILite_Config.lua"/>
+	
+	<!-- Load the Fonts Next -->
+	<Script file="Modules/Fonts.lua"/>
+	
+	<!-- Load all the Modules in Alphabetical Order -->
+	<Script file="Modules/Actionbars.lua"/>
+	<Script file="Modules/Buffs.lua"/>
+	<Script file="Modules/Chat.lua"/>
+	<Script file="Modules/Datatext.lua"/>
+	<Script file="Modules/Extras.lua"/>
+	<Script file="Modules/Nameplates.lua"/>
+	<Script file="Modules/Tooltip.lua"/>
+	<Script file="Modules/Unitframes.lua"/>
+	
+	<!-- Script to run a Mass Prosspect macro.-->
+	<Scripts>
+		<OnLoad>
+			BasicUILite_MP_OnLoad();
+		</OnLoad>
+	</Scripts>
+</Ui>
