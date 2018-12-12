@@ -5,11 +5,7 @@ SlashCmdList['RELOADUI'] = function()
 end
 SLASH_RELOADUI1 = '/rl'
 
-BasicUILite.ACTIONBARS = {
-	enable = true,
-	showHotKeys = false,
-	showMacronames = false,
-}
+BasicUILite_DB = {}
 
 BasicUILite.BUFFS ={
 	enable = true,

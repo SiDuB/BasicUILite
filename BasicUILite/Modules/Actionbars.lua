@@ -1,5 +1,13 @@
-local _, BasicUILite = ...
-local cfg = BasicUILite.ACTIONBARS
+--if not BasicUILite_DB then BasicUILite_DB = {} end
+if not BasicUILite_DB.Actionbars then BasicUILite_DB.Actionbars = {} end
+
+BasicUILite_DB.Actionbars = {
+	enable = true,
+	showHotKeys = false,
+	showMacronames = false,
+}
+
+cfg = BasicUILite_DB.Actionbars
 
 if cfg.enable ~= true then return end
 	

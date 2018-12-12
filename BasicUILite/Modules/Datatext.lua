@@ -542,10 +542,10 @@ if cfg.bags and cfg.bags > 0 then
 		self:SetAllPoints(Text)
 
 		local myPlayerName  = UnitName("player")				
-		--if not BasicUILite_DB then BasicUILite_DB = {} end
-		if not cfg.Currency then cfg.Currency = {} end
-		if not cfg.Currency[myPlayerRealm] then cfg.Currency[myPlayerRealm]={} end
-		cfg.Currency[myPlayerRealm][myPlayerName] = GetMoney()	
+		if not BasicUILite_DB then BasicUILite_DB = {} end
+		if not BasicUILite_DB.Currency then BasicUILite_DB.Currency = {} end
+		if not BasicUILite_DB.Currency[myPlayerRealm] then BasicUILite_DB.Currency[myPlayerRealm]={} end
+		BasicUILite_DB.Currency[myPlayerRealm][myPlayerName] = GetMoney()	
 			
 		OldMoney = NewMoney	
 			
@@ -588,7 +588,7 @@ if cfg.bags and cfg.bags > 0 then
 		
 		local totalGold = 0				
 		GameTooltip:AddLine("Character's: ")			
-		local thisRealmList = cfg.Currency[myPlayerRealm];
+		local thisRealmList = BasicUILite_DB.Currency[myPlayerRealm];
 		for k,v in pairs(thisRealmList) do
 			GameTooltip:AddDoubleLine(k, formatMoney(v), 1, 1, 1, 1, 1, 1)
 			totalGold=totalGold+v;
@@ -620,9 +620,9 @@ if cfg.bags and cfg.bags > 0 then
 		local myPlayerRealm = GetRealmName();
 		local myPlayerName  = UnitName("player");
 		
-		cfg.Currency = {}
-		cfg.Currency[myPlayerRealm]={}
-		cfg.Currency[myPlayerRealm][myPlayerName] = GetMoney();
+		BasicUILite_DB.Currency = {}
+		BasicUILite_DB.Currency[myPlayerRealm]={}
+		BasicUILite_DB.Currency[myPlayerRealm][myPlayerName] = GetMoney();
 	end
 	
 	SLASH_RESETCURRENCY1 = "/resetcurrency"
