@@ -1,4 +1,4 @@
-## Interface: 80100
+## Interface: 80000
 ## Title:|cff00B4FFBasic|rUI Lite
 ## Version: 8.0.1
 ## Notes: SiDuB's Unit Interface Addon [Lite Version].

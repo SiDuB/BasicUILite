@@ -600,7 +600,7 @@ if cfg.powerbar.enable == true then
 	PBFrame.Power:SetScale(PBFrame:GetScale())
 	PBFrame.Power:SetSize(cfg.powerbar.sizeWidth, 8)
 	PBFrame.Power:SetPoint('CENTER', PBFrame, 0, -28)
-	PBFrame.Power:SetStatusBarTexture([[Interface\TargetingFrame\UI-StatusBar]])
+	PBFrame.Power:SetStatusBarTexture([[_retail_\Interface\TargetingFrame\UI-StatusBar]])
 	PBFrame.Power:SetAlpha(0)
 
 	PBFrame.Power.Value = PBFrame.Power:CreateFontString(nil, 'ARTWORK')
@@ -618,18 +618,18 @@ if cfg.powerbar.enable == true then
 
 	PBFrame.Power.Background = PBFrame.Power:CreateTexture(nil, 'BACKGROUND')
 	PBFrame.Power.Background:SetAllPoints(PBFrame.Power)
-	PBFrame.Power.Background:SetTexture([[Interface\DialogFrame\UI-DialogBox-Background]])
+	PBFrame.Power.Background:SetTexture([[_retail_\Interface\DialogFrame\UI-DialogBox-Background]])
 	PBFrame.Power.Background:SetVertexColor(0.25, 0.25, 0.25, 1)
 
 	PBFrame.Power.Below = PBFrame.Power:CreateTexture(nil, 'BACKGROUND')
 	PBFrame.Power.Below:SetHeight(14)
 	PBFrame.Power.Below:SetWidth(14)
-	PBFrame.Power.Below:SetTexture([[Interface\AddOns\BasicUILite\Media\textureArrowBelow]])
+	PBFrame.Power.Below:SetTexture([[_retail_\Interface\AddOns\BasicUILite\Media\textureArrowBelow]])
 
 	PBFrame.Power.Above = PBFrame.Power:CreateTexture(nil, 'BACKGROUND')
 	PBFrame.Power.Above:SetHeight(14)
 	PBFrame.Power.Above:SetWidth(14)
-	PBFrame.Power.Above:SetTexture([[Interface\AddOns\BasicUILite\Media\textureArrowAbove]])
+	PBFrame.Power.Above:SetTexture([[_retail_\Interface\AddOns\BasicUILite\Media\textureArrowAbove]])
 	PBFrame.Power.Above:SetPoint('BOTTOM', PBFrame.Power.Below, 'TOP', 0, PBFrame.Power:GetHeight())
 
 	if (cfg.powerbar.showCombatRegen) then

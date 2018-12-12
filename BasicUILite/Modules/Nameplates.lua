@@ -33,8 +33,8 @@ local gsub = string.gsub
 
 	-- PvP Icon
 local pvpIcons = {
-	Alliance = "\124TInterface/PVPFrame/PVP-Currency-Alliance:16\124t",
-	Horde = "\124TInterface/PVPFrame/PVP-Currency-Horde:16\124t",
+	Alliance = "\124T_retail_/Interface/PVPFrame/PVP-Currency-Alliance:16\124t",
+	Horde = "\124T_retail_/Interface/PVPFrame/PVP-Currency-Horde:16\124t",
 }
 
 nameplateFrame.PvPIcon = function(unit)
@@ -116,30 +116,30 @@ local function TotemName(SpellID)
 end
 
 local totemData = {
-	[TotemName(192058)] = "Interface\\Icons\\spell_nature_brilliance",          -- Lightning Surge Totem
-	[TotemName(98008)]  = "Interface\\Icons\\spell_shaman_spiritlink",          -- Spirit Link Totem
-	[TotemName(192077)] = "Interface\\Icons\\ability_shaman_windwalktotem",     -- Wind Rush Totem
-	[TotemName(204331)] = "Interface\\Icons\\spell_nature_wrathofair_totem",    -- Counterstrike Totem
-	[TotemName(204332)] = "Interface\\Icons\\spell_nature_windfury",            -- Windfury Totem
-	[TotemName(204336)] = "Interface\\Icons\\spell_nature_groundingtotem",      -- Grounding Totem
+	[TotemName(192058)] = [[_retail_\Interface\Icons\spell_nature_brilliance]],          -- Lightning Surge Totem
+	[TotemName(98008)]  = [[_retail_\Interface\Icons\spell_shaman_spiritlink]],          -- Spirit Link Totem
+	[TotemName(192077)] = [[_retail_\Interface\Icons\ability_shaman_windwalktotem]],     -- Wind Rush Totem
+	[TotemName(204331)] = [[_retail_\Interface\Icons\spell_nature_wrathofair_totem]],    -- Counterstrike Totem
+	[TotemName(204332)] = [[_retail_\Interface\Icons\spell_nature_windfury]],            -- Windfury Totem
+	[TotemName(204336)] = [[_retail_\Interface\Icons\spell_nature_groundingtotem]],      -- Grounding Totem
 	-- Water
-	[TotemName(157153)] = "Interface\\Icons\\ability_shaman_condensationtotem", -- Cloudburst Totem
-	[TotemName(5394)]   = "Interface\\Icons\\INV_Spear_04",                     -- Healing Stream Totem
-	[TotemName(108280)] = "Interface\\Icons\\ability_shaman_healingtide",       -- Healing Tide Totem
+	[TotemName(157153)] = [[_retail_\Interface\Icons\ability_shaman_condensationtotem]], -- Cloudburst Totem
+	[TotemName(5394)]   = [[_retail_\Interface\Icons\INV_Spear_04]],                     -- Healing Stream Totem
+	[TotemName(108280)] = [[_retail_\Interface\Icons\ability_shaman_healingtide]],       -- Healing Tide Totem
 	-- Earth
-	[TotemName(207399)] = "Interface\\Icons\\spell_nature_reincarnation",       -- Ancestral Protection Totem
-	[TotemName(198838)] = "Interface\\Icons\\spell_nature_stoneskintotem",      -- Earthen Shield Totem
-	[TotemName(51485)]  = "Interface\\Icons\\spell_nature_stranglevines",       -- Earthgrab Totem
-	[TotemName(61882)]  = "Interface\\Icons\\spell_shaman_earthquake",          -- Earthquake Totem
-	[TotemName(196932)] = "Interface\\Icons\\spell_totem_wardofdraining",       -- Voodoo Totem
+	[TotemName(207399)] = [[_retail_\Interface\Icons\spell_nature_reincarnation]],       -- Ancestral Protection Totem
+	[TotemName(198838)] = [[_retail_\Interface\Icons\spell_nature_stoneskintotem]],      -- Earthen Shield Totem
+	[TotemName(51485)]  = [[_retail_\Interface\Icons\spell_nature_stranglevines]],       -- Earthgrab Totem
+	[TotemName(61882)]  = [[_retail_\Interface\Icons\spell_shaman_earthquake]],          -- Earthquake Totem
+	[TotemName(196932)] = [[_retail_\Interface\Icons\spell_totem_wardofdraining]],       -- Voodoo Totem
 	-- Fire
-	[TotemName(192222)] = "Interface\\Icons\\spell_shaman_spewlava",            -- Liquid Magma Totem
-	[TotemName(204330)] = "Interface\\Icons\\spell_fire_totemofwrath",          -- Skyfury Totem
+	[TotemName(192222)] = [[_retail_\Interface\Icons\spell_shaman_spewlava]],            -- Liquid Magma Totem
+	[TotemName(204330)] = [[_retail_\Interface\Icons\spell_fire_totemofwrath]],          -- Skyfury Totem
 	-- Totem Mastery
-	[TotemName(202188)] = "Interface\\Icons\\spell_nature_stoneskintotem",      -- Resonance Totem
-	[TotemName(210651)] = "Interface\\Icons\\spell_shaman_stormtotem",          -- Storm Totem
-	[TotemName(210657)] = "Interface\\Icons\\spell_fire_searingtotem",          -- Ember Totem
-	[TotemName(210660)] = "Interface\\Icons\\spell_nature_invisibilitytotem",   -- Tailwind Totem
+	[TotemName(202188)] = [[_retail_\Interface\Icons\spell_nature_stoneskintotem]],      -- Resonance Totem
+	[TotemName(210651)] = [[_retail_\Interface\Icons\spell_shaman_stormtotem]],          -- Storm Totem
+	[TotemName(210657)] = [[_retail_\Interface\Icons\spell_fire_searingtotem]],          -- Ember Totem
+	[TotemName(210660)] = [[_retail_\Interface\Icons\spell_nature_invisibilitytotem]],   -- Tailwind Totem
 }
 
 nameplateFrame.UpdateTotemIcon = function(frame)

@@ -75,8 +75,8 @@ ChatFrame1EditBox:ClearAllPoints()
 ChatFrame1EditBox:SetPoint('BOTTOMLEFT', ChatFrame1, 'TOPLEFT', 2, 33)
 ChatFrame1EditBox:SetPoint('BOTTOMRIGHT', ChatFrame1, 'TOPRIGHT', 0, 33)
 ChatFrame1EditBox:SetBackdrop({
-	bgFile = [[Interface\DialogFrame\UI-DialogBox-Background-Dark]],
-	edgeFile = [[Interface\Tooltips\UI-Tooltip-Border]],
+	bgFile = [[_retail_\Interface\DialogFrame\UI-DialogBox-Background-Dark]],
+	edgeFile = [[_retail_\Interface\Tooltips\UI-Tooltip-Border]],
 	tile = true, tileSize = 16, edgeSize = 18,
 	insets = {left = 3, right = 3, top = 2, bottom = 3},
 })
@@ -262,7 +262,7 @@ SoundFrame:RegisterEvent('CHAT_MSG_WHISPER')
 SoundFrame:RegisterEvent('CHAT_MSG_BN_WHISPER')
 SoundFrame:SetScript('OnEvent', function(_, event)
 	if (event == 'CHAT_MSG_WHISPER' or event == 'CHAT_MSG_BN_WHISPER') then
-		PlaySoundFile([[Interface\AddOns\BasicUILite\Media\Whisper.mp3]])
+		PlaySoundFile([[_retail_\Interface\AddOns\BasicUILite\Media\Whisper.mp3]])
 	end
 end)	
 
@@ -292,8 +292,8 @@ local function StyleBubble(frame)
 	frame:SetPoint('TOPLEFT', frame.text, -7, 7)
 	frame:SetPoint('BOTTOMRIGHT', frame.text, 7, -7)
 	frame:SetBackdrop({
-		bgFile = 'Interface\\Tooltips\\UI-Tooltip-Background',
-		edgeFile = 'Interface\\Tooltips\\UI-Tooltip-Border',
+		bgFile = [[_retail_\Interface\Tooltips\UI-Tooltip-Background]],
+		edgeFile = [[_retail_\Interface\Tooltips\UI-Tooltip-Border']],
 		tile = true,
 		tileSize = 16,
 		edgeSize = 12,

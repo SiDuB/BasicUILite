@@ -19,7 +19,7 @@ BasicUILite.CHAT = {
 BasicUILite.DATATEXT = {
 	enable = true,
 	
-	font = [[Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
+	font = [[_retail_\Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
 	fontSize = 17,
 		
 	bg_pvp = true,          	-- enable 3 stats in battleground only that replace stat1,stat2,stat3.
@@ -72,7 +72,7 @@ BasicUILite.EXTRAS = {
 
 		valueAbbrev = true,
 
-		valueFont = [[Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
+		valueFont = [[_retail_\Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
 		valueFontSize = 20,
 		valueFontOutline = true,
 		valueFontAdjustmentX = 0,
@@ -85,13 +85,13 @@ BasicUILite.EXTRAS = {
 		showArcaneCharges = true,
 
 		-- Resource text shown above the bar.
-		extraFont = [[Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
+		extraFont = [[_retail_\Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
 		extraFontSize = 22,
 		extraFontOutline = true,
 
 		hp = {
 			show = false,
-			hpFont = [[Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
+			hpFont = [[_retail_\Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
 			hpFontOutline = true,
 			hpFontSize = 25,
 			hpFontColor = {0.0, 1.0, 0.0},
@@ -121,7 +121,7 @@ BasicUILite.EXTRAS = {
 		rune = {
 			show = true,
 
-			runeFont = [[Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
+			runeFont = [[_retail_\Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
 			runeFontSize = 22,
 			runeFontOutline = true,
 		},
@@ -148,9 +148,9 @@ BasicUILite.EXTRAS = {
 
 BasicUILite.FONTS = {
 	enable = true,
-	NormalFont = [[Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
-	BoldFont = [[Interface\AddOns\BasicUILite\Media\Expressway_Rg_BOLD.ttf]],
-	ItalicFont 	= [[Interface\AddOns\BasicUILite\Media\Expressway_Sb_ITALIC.ttf]],
+	NormalFont = [[_retail_\Interface\AddOns\BasicUILite\Media\Expressway_Free_NORMAL.ttf]],
+	BoldFont = [[_retail_\Interface\AddOns\BasicUILite\Media\Expressway_Rg_BOLD.ttf]],
+	ItalicFont 	= [[_retail_\Interface\AddOns\BasicUILite\Media\Expressway_Sb_ITALIC.ttf]],
 }
 
 BasicUILite.NAMEPLATES = {
@@ -213,5 +213,5 @@ BasicUILite.TOOLTIP = {
 BasicUILite.UNITFRAMES = {
 	enable = true,
 	UnitScale = 1.2,
-	UnitframeFont = [[Interface\AddOns\BasicUILite\Media\Expressway_Rg_BOLD.ttf]],
+	UnitframeFont = [[_retail_\Interface\AddOns\BasicUILite\Media\Expressway_Rg_BOLD.ttf]],
 }

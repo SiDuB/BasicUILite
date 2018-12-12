@@ -46,7 +46,7 @@ end
 DataP1:SetPoint("BOTTOM", DataP2, "TOP", 0, 0)
 DataP1:SetWidth(1300 / 3)
 DataP1:SetBackdrop({ 
-	bgFile = [[Interface\DialogFrame\UI-DialogBox-Background-Dark]], 
+	bgFile = [[_retail_\Interface\DialogFrame\UI-DialogBox-Background-Dark]], 
 })
 DataP1:SetBackdropColor(0, 0, 0, 0.60)
 DataP1:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -66,7 +66,7 @@ end)
 DataP2:SetPoint("BOTTOM", DataP3, "TOP", 0, 0)
 DataP2:SetWidth(1300 / 3)
 DataP2:SetBackdrop({ 
-	bgFile = [[Interface\DialogFrame\UI-DialogBox-Background-Dark]], 
+	bgFile = [[_retail_\Interface\DialogFrame\UI-DialogBox-Background-Dark]], 
 })
 DataP2:SetBackdropColor(0, 0, 0, 0.60)
 
@@ -75,7 +75,7 @@ DataP2:SetBackdropColor(0, 0, 0, 0.60)
 DataP3:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 15, 5)
 DataP3:SetWidth(1300 / 3)
 DataP3:SetBackdrop({ 
-	bgFile = [[Interface\DialogFrame\UI-DialogBox-Background-Dark]], 
+	bgFile = [[_retail_\Interface\DialogFrame\UI-DialogBox-Background-Dark]], 
 })
 DataP3:SetBackdropColor(0, 0, 0, 0.60)
 
@@ -83,7 +83,7 @@ DataP3:SetBackdropColor(0, 0, 0, 0.60)
 -----------------------------------------------------------------------
 DataBGP:SetAllPoints(DataP1)
 DataBGP:SetBackdrop({ 
-	bgFile = [[Interface\DialogFrame\UI-DialogBox-Background-Dark]], 
+	bgFile = [[_retail_\Interface\DialogFrame\UI-DialogBox-Background-Dark]], 
 })
 DataBGP:SetBackdropColor(0, 0, 0, 0.60)
 
@@ -1427,8 +1427,8 @@ if cfg.guild and cfg.guild > 0 then
 	local noteString = join("", "|cff999999   ", LABEL_NOTE, ":|r %s")
 	local officerNoteString = join("", "|cff999999   ", GUILD_RANK1_DESC, ":|r %s")
 	local groupedTable = { "|cffaaaaaa*|r", "" } 
-	local MOBILE_BUSY_ICON = "|TInterface\\ChatFrame\\UI-ChatIcon-ArmoryChat-BusyMobile:14:14:0:0:16:16:0:16:0:16|t";
-	local MOBILE_AWAY_ICON = "|TInterface\\ChatFrame\\UI-ChatIcon-ArmoryChat-AwayMobile:14:14:0:0:16:16:0:16:0:16|t";
+	local MOBILE_BUSY_ICON = "|T_retail_\\Interface\\ChatFrame\\UI-ChatIcon-ArmoryChat-BusyMobile:14:14:0:0:16:16:0:16:0:16|t";
+	local MOBILE_AWAY_ICON = "|T_retail_\\Interface\\ChatFrame\\UI-ChatIcon-ArmoryChat-AwayMobile:14:14:0:0:16:16:0:16:0:16|t";
 	
 	local guildTable, guildXP, guildMotD = {}, {}, ""
 	local totalOnline = 0

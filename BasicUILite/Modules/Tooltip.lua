@@ -95,9 +95,9 @@ local UnitFactionGroup = UnitFactionGroup
 local UnitCreatureType = UnitCreatureType
 local GetQuestDifficultyColor = GetQuestDifficultyColor
 
-local tankIcon = "|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:13:13:0:0:64:64:0:19:22:41|t"
-local healIcon = "|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:13:13:0:0:64:64:20:39:1:20|t"
-local damagerIcon = "|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:13:13:0:0:64:64:20:39:22:41|t"
+local tankIcon = "|T_retail_\\Interface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:13:13:0:0:64:64:0:19:22:41|t"
+local healIcon = "|T_retail_\\Interface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:13:13:0:0:64:64:20:39:1:20|t"
+local damagerIcon = "|T_retail_\\Interface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:13:13:0:0:64:64:20:39:22:41|t"
 
     -- Some tooltip changes
 
@@ -113,7 +113,7 @@ else
 end
 
 GameTooltipStatusBar:SetHeight(7)
-GameTooltipStatusBar:SetBackdrop({bgFile = "Interface\\Buttons\\WHITE8x8"})
+GameTooltipStatusBar:SetBackdrop({bgFile = [[_retail_\Interface\Buttons\WHITE8x8]]})
 GameTooltipStatusBar:SetBackdropColor(0, 1, 0, 0.3)
 
 local function ApplyTooltipStyle(self)
@@ -136,7 +136,7 @@ local function ApplyTooltipStyle(self)
 
     if not self.Background then
         self.Background = self:CreateTexture(nil, "BACKGROUND", nil, 1)
-        self.Background:SetTexture("Interface\\Buttons\\WHITE8x8")
+        self.Background:SetTexture([[_retail_\Interface\Buttons\WHITE8x8]])
         self.Background:SetPoint("TOPLEFT", self, bgsize, -bgsize)
         self.Background:SetPoint("BOTTOMRIGHT", self, -bgsize, bgsize)
         self.Background:SetVertexColor(0.0, 0.0, 0.0, 0.60)
@@ -316,13 +316,13 @@ local function GetUnitPVPIcon(unit)
 
     if UnitIsPVPFreeForAll(unit) then
         if cfg.showPVPIcons then
-            return CreateTextureMarkup("Interface\\AddOns\\BasicUILite\\Media\\UI-PVP-FFA", 32,32, 16,16, 0,1,0,1, -2,-1)
+            return CreateTextureMarkup([[Interface\AddOns\BasicUILite\Media\UI-PVP-FFA]], 32,32, 16,16, 0,1,0,1, -2,-1)
         else
             return "|cffFF0000# |r"
         end
     elseif factionGroup and UnitIsPVP(unit) then
         if cfg.showPVPIcons then
-            return CreateTextureMarkup("Interface\\AddOns\\BasicUILite\\Media\\UI-PVP-"..factionGroup, 32,32, 14,14, 0,1,0,1, -2,-1)
+            return CreateTextureMarkup([[_retail_\Interface\AddOns\BasicUILite\Media\UI-PVP-]]..factionGroup, 32,32, 14,14, 0,1,0,1, -2,-1)
         else
             return "|cff00FF00# |r"
         end
@@ -523,7 +523,7 @@ local function CreateAnchor()
     anchorFrame:SetMovable(true)
     anchorFrame:SetClampedToScreen(true)
     anchorFrame:SetUserPlaced(true)
-    anchorFrame:SetBackdrop({bgFile="Interface\\MINIMAP\\TooltipBackdrop-Background",})
+    anchorFrame:SetBackdrop({bgFile=[[_retail_\Interface\MINIMAP\TooltipBackdrop-Background]],})
     anchorFrame:EnableMouse(true)
     anchorFrame:RegisterForDrag("LeftButton")
     anchorFrame:Hide()
